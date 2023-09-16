@@ -1,0 +1,16 @@
+{
+	"prettier.semi": false,
+	"prettier.resolveGlobalModules": false,
+	"prettier.requirePragma": true,
+	"prettier.printWidth": 120,
+	"prettier.bracketSpacing": false,
+	"prettier.bracketSameLine": false,
+	"prettier.arrowParens": "avoid",
+	"prettier.jsxSingleQuote": true,
+	"prettier.quoteProps": "consistent",
+	"prettier.singleQuote": true,
+	"prettier.useTabs": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"prettier.trailingComma": "none",
+	"editor.insertSpaces": false
+}
