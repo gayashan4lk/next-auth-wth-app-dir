@@ -26,9 +26,9 @@ type userElementProps = {
 function UserElement({ user }: userElementProps) {
 	return (
 		<div>
-			<h1>Hi, {user.name} </h1>
-			<h4>{user.email}</h4>
-			<h4>{user.imageUrl}</h4>
+			<h1>Hi, {user.name ?? 'Guest'} </h1>
+			<h4>{user.email ?? 'no email found'}</h4>
+			<h4>{user.imageUrl ?? 'no imageUrl found'}</h4>
 			{user.imageUrl && (
 				<Image
 					className="border-4 border-black dark:border-slate-500 drop-shadow-xl shadow-black rounded-full mx-auto mt-8"
