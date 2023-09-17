@@ -9,14 +9,7 @@ export default async function Home() {
 
 	if (!session) return <h1>This is a public page. Please sign in.</h1>
 
-	return (
-		<>
-			{session.user && <UserElement user={session.user} />}
-			{!session.user && <h1>Hi, Guest</h1>}
-
-			{session.expires && <h4>Expires: {session.expires}</h4>}
-		</>
-	)
+	return <>{session.expires && <h4>Expires: {session.expires}</h4>}</>
 }
 
 type userElementProps = {
